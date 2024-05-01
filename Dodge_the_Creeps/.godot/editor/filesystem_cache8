@@ -1,0 +1,27 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1714589533
+icon.svg::CompressedTexture2D::7131376122085623264::1714559554::1714589314::1::::<><>::
+::res://art/::1714589314
+enemyFlyingAlt_1.png::CompressedTexture2D::6591308673199264171::1714559554::1714589314::1::::<><>::
+enemyFlyingAlt_2.png::CompressedTexture2D::4773542935609847018::1714559554::1714589314::1::::<><>::
+enemySwimming_1.png::CompressedTexture2D::2319335842093961971::1714559554::1714589314::1::::<><>::
+enemySwimming_2.png::CompressedTexture2D::1174058406187399169::1714559554::1714589314::1::::<><>::
+enemyWalking_1.png::CompressedTexture2D::7034392298557666801::1714559554::1714589314::1::::<><>::
+enemyWalking_2.png::CompressedTexture2D::8754457832154508118::1714559554::1714589314::1::::<><>::
+gameover.wav::AudioStreamWAV::1311404872156343856::1714559554::1714589314::1::::<><>::
+House In a Forest Loop.ogg::AudioStreamOggVorbis::1604315699090385694::1714559554::1714589314::1::::<><>::
+playerGrey_up1.png::CompressedTexture2D::5894516134359379723::1714559554::1714589314::1::::<><>::
+playerGrey_up2.png::CompressedTexture2D::2640977680674158661::1714559554::1714589314::1::::<><>::
+playerGrey_walk1.png::CompressedTexture2D::7227437568883252843::1714559554::1714589314::1::::<><>::
+playerGrey_walk2.png::CompressedTexture2D::3307431109703085870::1714559554::1714589314::1::::<><>::
+::res://fonts/::1714589314
+FONTLOG.txt::TextFile::-1::1714559554::0::1::::<><>::
+LICENSE.txt::TextFile::-1::1714559554::0::1::::<><>::
+Xolonium-Regular.ttf::FontFile::4660271987411632448::1714559554::1714589314::1::::<><>::
+::res://scenes/::1714559554
+player.tscn::PackedScene::2304179565382261731::1714559554::0::1::::<><>::res://scripts/player.cs<>uid://cp8l24m64ujl8::::res://art/playerGrey_up1.png<>uid://bdvkrtepco3g0::::res://art/playerGrey_up2.png<>uid://da8a3t8q6bh2b::::res://art/playerGrey_walk1.png<>uid://bnee53w28thlu::::res://art/playerGrey_walk2.png
+::res://scripts/::1714559554
+HUD.cs::CSharpScript::-1::1714559554::0::1::::<><>::
+Main.cs::CSharpScript::-1::1714559554::0::1::::<><>::
+Mob.cs::CSharpScript::-1::1714559554::0::1::::<><>::
+player.cs::CSharpScript::-1::1714559554::0::1::::<><>::
