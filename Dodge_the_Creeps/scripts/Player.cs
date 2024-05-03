@@ -1,14 +1,13 @@
 using Godot;
 using System;
 
-public partial class player : Area2D
+public partial class Player : Area2D
 {
 	[Export]
 	public int Speed{get;set;} = 400 ; // como de rapido se puede mover el jugador
 	[Signal]
-	public delegate void HitEventHandler(); // señar HIT
+	public delegate void HitEventHandler() ; // señar HIT
 	public Vector2 ScreenSize ; // tamño de la ventana del juego
-	
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -72,5 +71,21 @@ public partial class player : Area2D
 		};
 		
 	}// fin clase _Process
+
+	private void OnBodyEntered(Node2D body)
+	{
+		GD.Print("** JUGADOR TOCADO ***") ;
+		Hide(); // el jugador desaparece al empezar hit
+		EmitSignal(SignalName.Hit);
+		// Debe posponerse ya que no podemos cambiar las propiedades físicas en una devolución de llamada de física.
+		GetNode<CollisionShape2D>("CollisionShape2D").SetDeferred(CollisionShape2D.PropertyName.Disabled, true);
+		
+	}// fin OnBodyEntered
+
+	public void Start(Vector2 position){
+		Position = position; 
+		Show();
+		GetNode<CollisionShape2D>("CollisionShape2D").Disabled = false;
+	}// fin Star
 
 } // fin class player
