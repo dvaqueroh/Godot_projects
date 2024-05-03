@@ -30,6 +30,10 @@ public partial class Main : Node
 
 		GetNode<HUD>("HUD").ShowGameOver(); // muestra mensaje GAME OVER desde nodo HUD
         GetNode<Timer>("MessageTimer").Start(); // prueba
+
+		GetNode<AudioStreamPlayer>("Music").Stop();
+		GetNode<AudioStreamPlayer>("DeathSound").Play();
+
 	}// fin GameOver
 
 	public void NewGame()
@@ -48,6 +52,8 @@ public partial class Main : Node
 
 		GetTree().CallGroup("mobs",Node.MethodName.QueueFree); // elimna el grupo Mobs, todos los enemigos
 		GD.Print("Se borran enemigos");
+
+		GetNode<AudioStreamPlayer>("Music").Play();
 
 	}// fin new game
 
